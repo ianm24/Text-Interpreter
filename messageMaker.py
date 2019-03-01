@@ -203,3 +203,10 @@ for x in range(len(message)):
 	elif message[x] == ",":
 		alphabet.comma(indentX,indentY+1,fontSize,fontColor,fileName)
 		indentX = indentX + 3
+	elif message[x] == ":":
+		if indentX - 2 < 1:
+			indentX = 1
+		else:
+			indentX = indentX - 2
+		alphabet.colon(indentX,indentY,fontSize,fontColor,fileName)
+		indentX = indentX + middleIndX
