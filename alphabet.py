@@ -769,3 +769,11 @@ def comma(indentX,indentY,fontSize,fontColor,fileName):
 					if x < 2*fontSize:
 						draw(x,y,indentX,indentY,fontSize,fontColor)
 	save('comma',fileName)
+	
+def colon(indentX,indentY,fontSize,fontColor,fileName):
+	for y in range(5*fontSize):
+			for x in range(5*fontSize):
+				if (y >= fontSize and y < 2*fontSize) or y >= 4*fontSize:
+					if x < 3*fontSize and x >= 2*fontSize:
+						draw(x,y,indentX,indentY,fontSize,fontColor)
+	save('colon',fileName)
