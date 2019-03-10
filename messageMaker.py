@@ -196,7 +196,7 @@ for x in range(len(message)):
 		else:
 			indentX = indentX - 2
 		alphabet.exclamation(indentX,indentY,fontSize,fontColor,fileName)
-		indentX = indentX + middleInd
+		indentX = indentX + middleIndX
 	elif message[x] == "?":
 		alphabet.qmark(indentX,indentY,fontSize,fontColor,fileName)
 		indentX = indentX + oneLineIndX
